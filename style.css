@@ -2,7 +2,8 @@
 /***** INDEX ME HTML ******/
 /**************************/
 :root {
-    --brown: #412411;
+    --green: #9AB106;
+    --cream: #ffffed;
     /* This is an example */
     /* Create your own color variables */
     /* At most I recommend using 3 colors 
@@ -15,35 +16,63 @@
     box-sizing: border-box;
     /* Choose your font family here
         or you can add it later */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #c5638a;
+    background-color: var(--green);
     /* the bg color would be the same as your 
         quote section bg color */
 }
 
-header {
-    display: block;
-}
+
 
 /***  LANDING PAGE ***/
-header img {
-    width: 50px;
+
+
+.landingPage {
+    background-image: url("img/waterfall.jpeg");
+    min-height: 500px;
+    width: 100%;
+    opacity: .5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
 }
 
 
 /***  NAVIGATION BAR ***/
-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin: 2%;
+header img {
+    width: 50px;
+    position: absolute;
+    margin: 20px;
 }
 
-#navLinks {
+.navLinks {
     list-style-type: none;
     display: flex;
 }
+
+ul.navLinks li {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+
+}
+
+
 
 
 /***  TITLE ***/
