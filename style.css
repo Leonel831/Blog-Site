@@ -56,8 +56,8 @@ header img {
 }
 
 ul.navLinks li {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -99,21 +99,62 @@ header h1 {
 
 
 /***  QUOTE SECTION ***/
+.quoteSection {
+    background-color: var(--cream);
+    margin-top: 170px;
+    padding: 35px 20px 35px 20px;
+    text-align: center;
+}
 
+.quoteSection q {
+    color: brown;
+    font-style: Courier;
+}
 
 
 /***  CARDS ***/
 .column img {
-    height: 100px
+    width: 250px;
+    height: 170px
 }
 
+.row {
+    background-color: var(--green);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.column {
+    margin: 50px 0px;
+    width: 290px;
+}
+
+.content_wrap {
+    color: var(--cream);
+    margin: 20px;
+}
+
+.content_wrap h2,
+p {
+    margin: 15px;
+}
 
 /***  LAST SECTION ***/
-
-
+.last_content {
+    margin: 40px 8% 60px 8%;
+}
 
 /***  FOOTER ***/
 
+footer {
+    background-color: #322a2a;
+    color: var(--cream);
+    text-align: center;
+    padding: 20px 0px 30px 0px;
+    margin-top: 20px;
+}
 
 
 
