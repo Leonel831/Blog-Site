@@ -4,6 +4,7 @@
 :root {
     --green: #9AB106;
     --cream: #ffffed;
+    --othergreen: #33896f;
     /* This is an example */
     /* Create your own color variables */
     /* At most I recommend using 3 colors 
@@ -20,7 +21,7 @@
 }
 
 body {
-    background-color: var(--green);
+    background-color: var(--cream);
     /* the bg color would be the same as your 
         quote section bg color */
 }
@@ -107,7 +108,7 @@ header h1 {
 }
 
 .quoteSection q {
-    color: brown;
+    color: var(--green);
     font-style: Courier;
 }
 
@@ -119,7 +120,7 @@ header h1 {
 }
 
 .row {
-    background-color: var(--green);
+    background-color: var(--othergreen);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -129,10 +130,11 @@ header h1 {
 .column {
     margin: 50px 0px;
     width: 290px;
+    background-color: var(--cream);
 }
 
 .content_wrap {
-    color: var(--cream);
+    color: var(--green);
     margin: 20px;
 }
 
@@ -144,6 +146,7 @@ p {
 /***  LAST SECTION ***/
 .last_content {
     margin: 40px 8% 60px 8%;
+    background-color: var(--cream);
 }
 
 /***  FOOTER ***/
@@ -166,3 +169,27 @@ footer {
 /**************************/
 /* Use CSS from previous CSS to 
       add and edit here */
+
+h1 {
+    display: block;
+    font-size: 2em;
+}
+
+.myRow {
+    margin: 220px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.aColumn {
+    width: 300px;
+    margin: 0 40px;
+}
+
+.aColumn img {
+    width: 300px;
+    display: block;
+    margin: 60px auto;
+}
